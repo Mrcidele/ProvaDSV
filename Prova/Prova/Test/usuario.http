@@ -1,0 +1,24 @@
+@url_base = http://localhost:5035/usuarios
+
+### Cadastrar usuário
+POST {{url_base}}/cadastrar
+Content-Type: application/json
+
+{
+    "email" : "teste",
+    "senha" : "teste"
+}
+
+### Login
+POST {{url_base}}/login
+Content-Type: application/json
+
+{
+    "email" : "teste",
+    "senha" : "teste"
+}
+
+### Listar usuários
+GET {{url_base}}/listar
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJ0ZXN0ZSIsImV4cCI6MTc0NjQ5MzAxMiwiaXNzIjoiUHJvdmEiLCJhdWQiOiJQcm92YVVzZXJzIn0.5WDhe3sKbYFiWs_vAmS9j_Cz5HpJOEbXvFlSiDxxtdA
+

@@ -1,0 +1,24 @@
+@url_base = http://localhost:5035/eventos
+
+### Criar evento
+
+POST {{url_base}}/criar
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJ0ZXN0ZSIsImV4cCI6MTc0NjQ5MzAxMiwiaXNzIjoiUHJvdmEiLCJhdWQiOiJQcm92YVVzZXJzIn0.5WDhe3sKbYFiWs_vAmS9j_Cz5HpJOEbXvFlSiDxxtdA
+Content-Type: application/json
+
+{
+    "nome" : "teste",
+    "local" : "bbb"  
+}
+
+
+### Listar eventos
+
+GET {{url_base}}/listar
+
+
+### Listar eventos por usuario
+
+GET {{url_base}}/listar
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJ0ZXN0ZSIsImV4cCI6MTc0NjQ5MzAxMiwiaXNzIjoiUHJvdmEiLCJhdWQiOiJQcm92YVVzZXJzIn0.5WDhe3sKbYFiWs_vAmS9j_Cz5HpJOEbXvFlSiDxxtdA
+
